@@ -1,8 +1,16 @@
-package com.ing.zoo;
+package com.ing.zoo.animals;
+
+import com.ing.zoo.Animal;
+import com.ing.zoo.Carnivores;
+import com.ing.zoo.Herbivores;
+import com.ing.zoo.Trick;
 
 import java.util.Random;
 
-public class Pig {
+/**
+ * This class represents a Pig.
+ */
+public class Pig extends Animal implements Herbivores, Carnivores, Trick {
     public String name;
     public String helloText;
     public String eatText;
@@ -10,26 +18,36 @@ public class Pig {
 
     public Pig()
     {
+
     }
 
-    public void sayHello()
-    {
-        helloText = "splash";
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public void sayHello() {
+        this.helloText = "splash";
         System.out.println(helloText);
     }
 
-    public void eatLeaves()
-    {
+    @Override
+    public void eatLeaves() {
         eatText = "munch munch oink";
         System.out.println(eatText);
     }
 
-    public void eatMeat()
-    {
+    @Override
+    public void eatMeat() {
         eatText = "nomnomnom oink thx";
         System.out.println(eatText);
     }
 
+    @Override
     public void performTrick()
     {
         Random random = new Random();
