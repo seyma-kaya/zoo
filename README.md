@@ -1,37 +1,24 @@
 ﻿# Zoo Java Console Application by Seyma Kaya
 ---
-## Git
+## Uitleg
 
-Voor het maken van deze opdracht wordt er gebruik gemaakt van het versiebeheersysteem Git.
+Ik heb geprobeerd zo veel mogelijk van de originele inhoud te behouden. Alle dieren staan in een aparte Package, dit zijn
+alle sub-klassen van de abstract class Animal. Alle dieren hebben namelijk een getter en setter voor de naam, een functie 
+genaamd `sayHello()` en uiteraard een naam. Elk dier stamt deze af van de super class Animal. 
 
-Gebruikte **IDE**: [IntelliJ IDEA](https://www.jetbrains.com/idea/). (**Niet verplicht**)
-
-Gebruikte **SDK**: [JDK 1.8](https://bitbucket.org/kychu/zoo/downloads/java-1.8.0-openjdk-1.8.0.212-3.b04.redhat.windows.x86_64.zip).
-
-Mocht er problemen zijn met het openen van dit project, creëer dan een nieuw project binnen jouw IDE en kopieer de Java bestanden uit `src/com/ing/zoo`
-
-Stappen:
-
-1. Clone deze repository.
-2. Maak een nieuwe repository aan, bijvoorbeeld op [Github](https://www.github.com).
-3. Push jouw veranderingen naar jouw repository.
-4. Maak jouw repository openbaar (public).
-4. Als de applicatie af is, push dan de laatste versie naar jouw `master` branch.
+Daarnaast heb ik drie interface classes gemaakt. De Carnivores, de Herbivores en de Trick classes. Een dier dat een herbivoor 
+is, implementeerd de Herbivores class. Binnen deze interfaces zitten functies die allen tot die groep behoord. Alleen een carnivoor 
+kan vlees eten, dus alleen deze bevat `eatMeat()` methode.
 
 --- 
-## Opdracht
-- Maak de applicatie af.
-- Reorganiseer eventueel de folder structuur.
-- Refactor eventueel de code (denk goed na over de class structure).
-	- Probeer er voor de zorgen dat je bijvoorbeeld geen EatMeat methode kan aanroepen op een Zebra object.
-- Voeg 2 nieuwe dieren toe.
----
-## Eisen
+## Wat vond ik ervan
 
-Bij elke command laat je het resultaat in de console  zien.
+Ik heb in totaal twee uur gewerkt aan de opdracht. Binnen deze twee uur heb ik gekeken naar wat de opdracht was, hoe de Zoo 
+class eruit zag, en wat ik in elke class moest veranderen of toevoegen. Er waren ook sommige momenten waarbij ik mijn geheugen 
+weer even moest opfrissen. De uitvoering was niet lastig. Het is voor mij ook niet de eerste keer dat ik zo een opdracht 
+heb uitgevoerd. Toch merkte ik wel dat zonder concrete tasks die ik moest uitvoeren, ik wel even de tijd 
+nodig had om goed te kijken naar wat er van mij gevraagd wordt en wat ik kan doen om dit gevraagde te leveren. 
 
-- Als je de [hello] command uitvoert zonder dat er een naam is ingevuld zeggen alle dieren hallo.
-	- Als er wel een naam is ingevuld [hello henk] zegt alleen dat dier hallo 
-- Als je de [give leaves] command uitvoert krijgen alle herbivores leaves.
-- Als je de [give meat] command uitvoert krijgen alle carnivores meat.
-- Als je de [perform trick] command uitvoert doen alle dieren die dat kunnen hun trucje.
+Ik probeerde vooral in een vertical sliced manier de opdrachten uit te voeren. Stap-voor-stap overal een aanpassing te maken, 
+in plaats van helemaal opnieuw elke laag op te bouwen. 
+
